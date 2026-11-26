@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans:
+    var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  --color-navy-50: #eef3f9;
+  --color-navy-100: #dde6f2;
+  --color-navy-200: #b9cae2;
+  --color-navy-500: #2e5c9a;
+  --color-navy-600: #22508f;
+  --color-navy-700: #1b3d71;
+  --color-navy-800: #0f2a57;
+  --color-navy-900: #071f45;
+  --color-navy-950: #031634;
+
+  --color-brand-50: #e7f8fd;
+  --color-brand-100: #c9eff9;
+  --color-brand-200: #9be0f3;
+  --color-brand-500: #00b0e0;
+  --color-brand-600: #0097c2;
+  --color-brand-700: #00789c;
+
+  --color-aqua-500: #26c0d7;
+
+  --color-surface: #f2f9fc;
+  --color-cream: #fbf8f1;
+
+  --text-xs: calc(0.75rem * var(--zl-text));
+  --text-sm: calc(0.875rem * var(--zl-text));
+  --text-base: calc(1rem * var(--zl-text));
+  --text-lg: calc(1.125rem * var(--zl-text));
+  --text-xl: calc(1.25rem * var(--zl-text));
+  --text-2xl: calc(1.5rem * var(--zl-text));
+  --text-3xl: calc(1.875rem * var(--zl-text));
+}
+
+:root {
+  --zl-text: 1.08;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f2f9fd;
+    color: #0b1f3a;
+    font-family:
+      var(--font-inter),
+      "Inter",
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  button,
+  input,
+  select {
+    font-family: inherit;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.team-badge {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  z-index: 50;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(11, 31, 58, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.team-badge img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+@media (max-width: 639px) {
+  .team-badge {
+    display: none;
+  }
+}

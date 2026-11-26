@@ -1,0 +1,54 @@
+.fleet-tools {
+  --navy: #061f3d;
+  --ink: #0b1b2f;
+  --muted: #3d5268;
+  --page-bg: #f3f9fc;
+  --ice: #d3f1fd;
+  --cyan-border: #a2f4fd;
+  --line: #c7dbe8;
+  --row-bg: #f3fafd;
+  --green: #2aea37;
+  --red: #f36868;
+  --rust: #c2410c;
+  --danger-text: #b42318;
+
+  color: var(--ink);
+  font-family: "Inter", "Poppins", "Segoe UI", Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+.fleet-tools *,
+.fleet-tools *::before,
+.fleet-tools *::after {
+  box-sizing: border-box;
+}
+
+.fleet-tools button,
+.fleet-tools input,
+.fleet-tools select {
+  font: inherit;
+  color: inherit;
+}
+
+.fleet-tools button {
+  cursor: pointer;
+}
+
+.fleet-tools button:disabled {
+  cursor: not-allowed;
+}
+
+.fleet-tools :focus-visible {
+  outline: 2px solid #18b8df;
+  outline-offset: 2px;
+}
+
+.fleet-tools .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

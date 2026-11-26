@@ -1,0 +1,306 @@
+.fleet-shell .cost-page {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.fleet-shell .cost-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.fleet-shell .cost-header h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: calc(30px * var(--zl-text));
+  font-weight: 600;
+  letter-spacing: -0.75px;
+}
+
+.fleet-shell .private-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  background: #fff;
+  color: var(--ink);
+  font-size: calc(13px * var(--zl-text));
+  white-space: nowrap;
+}
+
+.fleet-shell .cost-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(360px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.fleet-shell .cost-card {
+  border: 1px solid var(--cyan-border);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.fleet-shell form.cost-card {
+  padding: 8px 24px 20px;
+}
+
+.fleet-shell .cost-section {
+  padding: 16px 0 8px;
+}
+
+.fleet-shell .cost-section h2,
+.fleet-shell .cost-aside h2 {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: calc(15px * var(--zl-text));
+  font-weight: 600;
+}
+
+.fleet-shell .cost-field {
+  max-width: 420px;
+  margin-bottom: 14px;
+}
+
+.fleet-shell .cost-field label,
+.fleet-shell .cost-field__label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-size: calc(13px * var(--zl-text));
+}
+
+.fleet-shell .cost-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background: var(--row-bg);
+}
+
+.fleet-shell .cost-input:focus-within {
+  border-color: #18b8df;
+  background: #fff;
+}
+
+.fleet-shell .cost-input.has-error {
+  border-color: var(--red);
+  background: #fff;
+}
+
+.fleet-shell .cost-input input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: none;
+  font-size: calc(14px * var(--zl-text));
+  outline: none;
+}
+
+.fleet-shell .cost-input--readonly {
+  justify-content: space-between;
+  color: var(--ink);
+  font-size: calc(14px * var(--zl-text));
+}
+
+.fleet-shell .cost-input__unit {
+  flex: none;
+  color: var(--muted);
+  font-size: calc(11px * var(--zl-text));
+}
+
+.fleet-shell .cost-field__hint,
+.fleet-shell .cost-field__error {
+  margin: 6px 0 0;
+  font-size: calc(12px * var(--zl-text));
+}
+
+.fleet-shell .cost-field__hint {
+  color: var(--muted);
+}
+
+.fleet-shell .cost-field__hint a {
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.fleet-shell .cost-field__error {
+  color: var(--danger-text);
+}
+
+.fleet-shell .cost-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 12px -24px 0;
+  padding: 16px 24px 0;
+  border-top: 1px solid var(--ice);
+}
+
+.fleet-shell .btn--icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fleet-shell .extreme-box {
+  margin: 8px 0;
+  padding: 14px 16px;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  background: #fffbeb;
+  color: #78350f;
+  font-size: calc(13px * var(--zl-text));
+}
+
+.fleet-shell .extreme-box p {
+  margin: 0 0 10px;
+}
+
+.fleet-shell .extreme-box__title {
+  font-weight: 600;
+}
+
+.fleet-shell .extreme-box__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.fleet-shell .cost-loading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.fleet-shell .cost-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.fleet-shell .cost-status,
+.fleet-shell .cost-help {
+  padding: 24px 24px 24px;
+}
+
+.fleet-shell .cost-aside h2 {
+  margin-bottom: 12px;
+  font-size: calc(17px * var(--zl-text));
+}
+
+.fleet-shell .cost-status__state {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: calc(24px * var(--zl-text));
+  font-weight: 600;
+}
+
+.fleet-shell .cost-status__state.is-ok {
+  color: var(--ink);
+}
+
+.fleet-shell .cost-status__state svg {
+  width: 22px;
+  height: 22px;
+  color: #0284c7;
+}
+
+.fleet-shell .cost-status__list {
+  margin: 0;
+}
+
+.fleet-shell .cost-status__list div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  font-size: calc(15px * var(--zl-text));
+}
+
+.fleet-shell .cost-status__list dt {
+  color: var(--muted);
+}
+
+.fleet-shell .cost-status__list dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 600;
+  text-align: right;
+}
+
+.fleet-shell .cost-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 8px 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.fleet-shell .cost-steps li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+  font-size: calc(14px * var(--zl-text));
+  line-height: 1.35;
+  text-align: center;
+}
+
+.fleet-shell .cost-steps li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: calc(50% + 26px);
+  width: calc(100% - 40px);
+  border-top: 1px solid var(--line);
+}
+
+.fleet-shell .cost-steps span {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--ice);
+  color: var(--navy);
+  font-size: calc(14px * var(--zl-text));
+  font-weight: 600;
+}
+
+.fleet-shell .cost-help__note {
+  margin: 0 0 12px;
+  padding: 16px;
+  border-radius: 10px;
+  background: var(--row-bg);
+  color: var(--muted);
+  font-size: calc(14px * var(--zl-text));
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .fleet-shell .cost-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .fleet-shell .cost-header {
+    flex-direction: column;
+  }
+}
